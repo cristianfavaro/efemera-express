@@ -1,0 +1,21 @@
+Rascunhos
+
+npm install -g express-generator # instalar o programa
+
+
+express efemera-express --ejs # aqui ele já instalou. É abreviação do --view=ejs
+
+
+#Dentro do projeto a gente roda o npm Install
+
+Code .
+
+
+nodemon start 
+
+#aqui ele já começa
+
+
+# arrumar o taplte tirando o headers e footers
+
+# criei pasta controllers e criando o controleer de home
