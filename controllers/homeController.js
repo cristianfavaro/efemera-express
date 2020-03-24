@@ -13,6 +13,20 @@ const homeController = {
             {nome: 'imagem4', imagem:"imagens/austin-distel-wawEfYdpkag-unsplash.jpg"},
         ]
         res.render('index', {title: 'Home', listaServicos: servicos, carousel: carousel});
+    },
+    contato: (req, res) => {
+        let {nome, email, mensagem} = req.body;
+        
+        res.render('contato', {nome, email, mensagem, title: 'Contato',});
+    },
+    newsletter: (req, res) =>{
+        let {nome, email} = req.body;
+
+        // get = req.query
+        // post = req.body
+        // pelo url req.params
+
+        res.render('newsletter', {nome, email, title: 'Newsletter'});
     }
 };
 
